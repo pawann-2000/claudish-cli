@@ -1,9 +1,8 @@
 # Claudish
 
-Translate between plain English and deliberately over-engineered "Claudish",
-locally, with two tiny [ProgramAsWeights](https://programasweights.com)
-programs — and, like [rtk](https://github.com/rtk-ai/rtk) does for shell
-output, shrink the prose that gets fed back into Claude Code's context.
+Translate between plain English and over-technical "Claudish" by using two
+small [ProgramAsWeights](https://programasweights.com) programs, locally, and
+shrink the prose that gets fed back to Claude Code.
 
 rtk rewrites `git status` into `rtk git status` so the model reads a compact
 result. Claudish does the same for the other big source of re-fed text:
@@ -90,7 +89,7 @@ approximate.
 - [`specs/english-to-claudish.md`](specs/english-to-claudish.md)
 - [`specs/claudish-to-english.md`](specs/claudish-to-english.md)
 
-Copy either spec into your own PAW program or adapt it for another model.
+Copy the spec into your PAW program or adapt it for another model.
 
 ## Public programs
 
