@@ -1,0 +1,3 @@
+Three judge agents with different rubrics (technical, product, pitch) each emit a Scorecard (Pydantic, scores as conint(ge=1, le=10), evidence: list[str] with a validator requiring at least one evidence line per score). A Chair node computes disagreement; if any dimension's variance exceeds a threshold it routes Command[Literal["debate", "verdict"]] into a debate subgraph where judges must cite each other's evidence before revising. Students feed it real hackathon repos. Eval: correlation with human judge scores in LangSmith.
+Why unique: multi-agent disagreement as a first-class control-flow signal, not a prompt trick.
+Interview: supervisor vs swarm tradeoffs, reducers for concurrent writes, evaluating multi-agent outputs.
